@@ -85,6 +85,10 @@
   .social__icon {
     width: 40%;
   }
+  /* ------------- STREAMING SCHEDULE SECTION ------------- */
+  .streaming__schedule__section {
+    width: calc(100% - 24rem);
+  }
 }
 /* 901px -->  1200px => Tablet (Landscape Mode) & Laptop (HD) */
 @media (min-width: 56.25em) and (max-width: 75em) {
@@ -131,6 +135,10 @@
   /* ------------- FOOTER SECTION ------------- */
   .social__icon {
     width: 35%;
+  }
+  /* ------------- STREAMING SCHEDULE SECTION ------------- */
+  .streaming__schedule__section {
+    width: calc(100% - 22rem);
   }
 }
 /* 
