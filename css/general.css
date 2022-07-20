@@ -232,6 +232,10 @@ body {
   font-weight: 500;
   color: #b9b9b9;
   text-decoration: none;
+  transition: all 0.3s;
+}
+.footer__nav__link:hover {
+  color: #dd0000;
 }
 .footer__nav :not(:last-child) {
   margin-right: 3rem;
