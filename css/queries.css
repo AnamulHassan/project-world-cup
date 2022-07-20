@@ -3,6 +3,7 @@
   html {
     font-size: 75%;
   }
+  /* ------------- HERO SECTION ------------- */
   .heading__primary {
     font-size: 6rem;
   }
@@ -14,24 +15,24 @@
     font-size: 1.6rem;
     padding: 1.2rem 2.6rem;
   }
-  .heading__secondary {
-    font-size: 1.6rem;
-  }
-  .country__name {
-    font-size: rem;
-  }
-  .streaming__data__time {
-    font-size: 1.4rem;
-  }
   .hero__img {
     width: 70%;
   }
+  /* ------------- LIVE STREAMING SECTION ------------- */
+  .heading__secondary {
+    font-size: 1.6rem;
+  }
+  /* ------------- STREAMING SCHEDULE SECTION ------------- */
+  .streaming__data__time {
+    font-size: 1.4rem;
+  }
 }
-/* 1201 --> 1800 => Laptop (Full HD) & Big Desktop */
+/* 1201 --> 1800 => Laptop (Full HD) */
 @media (min-width: 75em) and (max-width: 112.5em) {
   html {
     font-size: 62.5%;
   }
+  /* ------------- HERO SECTION ------------- */
   .hero__header {
     padding: 8rem 7rem;
   }
@@ -49,10 +50,12 @@
     font-size: 1.6rem;
     padding: 1.2rem 2rem;
   }
+  /* ------------- NAVIGATION SECTION ------------- */
   .nav__section__container {
     width: 24rem;
     margin-right: 2.2rem;
   }
+  /* ------------- LIVE STREAMING SECTION ------------- */
   .live-streaming__section__container {
     width: calc(100% - 24rem);
     gap: 2.2rem;
@@ -78,6 +81,7 @@
     margin-right: 0.8rem;
     font-size: 1.8rem;
   }
+  /* ------------- FOOTER SECTION ------------- */
   .social__icon {
     width: 40%;
   }
@@ -87,6 +91,7 @@
   html {
     font-size: 52.25%;
   }
+  /* ------------- HERO SECTION ------------- */
   .hero__header {
     padding: 7rem 8rem;
   }
@@ -110,10 +115,12 @@
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.3s;
   }
+  /* ------------- NAVIGATION SECTION ------------- */
   .nav__section__container {
     width: 22rem;
     margin-right: 2.2rem;
   }
+  /* ------------- LIVE STREAMING SECTION ------------- */
   .live-streaming__section__container {
     width: calc(100% - 22rem);
     gap: 2.2rem;
@@ -121,6 +128,7 @@
   .heading__secondary {
     line-height: 2.2rem;
   }
+  /* ------------- FOOTER SECTION ------------- */
   .social__icon {
     width: 35%;
   }
@@ -131,6 +139,7 @@
   html {
     font-size: 56.25%;
   }
+  /* ------------- HERO SECTION ------------- */
   .hero__container {
     width: 90vw;
     height: 80vh;
@@ -164,6 +173,7 @@
     width: 100%;
     top: 75%;
   }
+  /* ------------- NAVIGATION SECTION ------------- */
   .nav-and-live-streaming__section {
     flex-direction: column;
     margin: 0 auto 7rem;
@@ -194,6 +204,7 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2.2rem;
   }
+  /* ------------- LIVE STREAMING SECTION ------------- */
   .live-streaming__section__container {
     width: 100%;
     display: grid;
@@ -201,6 +212,7 @@
     grid-template-rows: repeat(5, 1fr);
     gap: 2rem;
   }
+  /* ------------- FOOTER SECTION ------------- */
   .footer__header {
     padding-top: 7rem;
   }
@@ -232,6 +244,7 @@
   .social__icon {
     width: 35%;
   }
+  /* ------------- STREAMING SCHEDULE SECTION ------------- */
   .streaming__schedule__section {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -244,6 +257,7 @@
   html {
     font-size: 50%;
   }
+  /* ------------- HERO SECTION ------------- */
   .hero__section {
     margin-bottom: 2.4rem;
   }
@@ -290,6 +304,7 @@
   .hero__img {
     width: 80%;
   }
+  /* ------------- NAVIGATION SECTION ------------- */
   .nav-and-live-streaming__section {
     display: flex;
     flex-direction: column;
@@ -314,12 +329,14 @@
   .btn--red {
     padding: 1.1rem 2rem;
   }
+  /* ------------- LIVE STREAMING SECTION ------------- */
   .live-streaming__section__container {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr);
     column-gap: 1.6rem;
   }
+  /* ------------- FOOTER SECTION ------------- */
   .horizontal__line {
     margin: 5rem 10rem;
   }
@@ -342,6 +359,7 @@
   .social__icon {
     width: 50%;
   }
+  /* ------------- STREAMING SCHEDULE SECTION ------------- */
   .streaming__schedule__section {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
