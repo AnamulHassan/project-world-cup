@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  /* 10/16 = 0.625 = 62.5% */
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+/* ------------- HERO SECTION ------------- */
+.hero__section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13rem;
+}
+.hero__container {
+  width: 85vw;
+  height: 85vh;
+  margin-top: 5rem;
+  display: flex;
+  background-color: #161616;
+  color: #fff;
+  border-radius: 3rem;
+}
+
+.hero__header {
+  padding: 11.1rem 10.6rem;
+  width: 50%;
+}
+.heading__primary {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 8rem;
+  background-image: linear-gradient(to top left, #f5b3b3, #ffffff);
+  background-clip: text;
+  color: transparent;
+}
+.hero__description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+  margin: 2rem 0 3rem;
+}
+.btn {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  padding: 1.6rem 2.5rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.63, -0.13, 0, 1.06);
+}
+.btn--red {
+  background-color: #dd0000;
+  color: #fff;
+}
+.btn--white {
+  color: #000;
+  background-color: #fff;
+}
+.btn::after {
+  position: absolute;
+  content: '';
+  background-color: #f5b3b3;
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 50%;
+  left: 50%;
+  /* border-radius: 50%; */
+  transform: translate(-50%, -50%) scale(1);
+  z-index: -1;
+  opacity: 0;
+  backface-visibility: hidden;
+  transition: all 0.6s;
+}
+.btn:hover.btn::after {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(80);
+}
+.btn:hover {
+  color: #444;
+}
+.hero__img__box {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.hero__img {
+  width: 90%;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  filter: brightness(1) saturate(1);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s;
+}
+.hero__container:hover .hero__img {
+  transform: translate(-50%, -50%) scale(0.97);
+  filter: brightness(0.92) saturate(0.8);
+}
+/* ------------- NAVIGATION SECTION ------------- */
+.nav-and-live-streaming__section {
+  width: 85vw;
+  margin: 0 auto 13rem;
+  display: flex;
+}
+.nav__section__container {
+  width: 33rem;
+  margin-right: 2.4rem;
+}
+.nav__box {
+  border-radius: 1rem;
+  background-color: #000;
+  padding: 3rem;
+}
+.nav__list {
+}
+.nav__list li {
+  list-style: none;
+  text-align: center;
+}
+.nav__list li:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.nav__item {
+  display: block;
+}
+
+.btn--white {
+}
+/* ------------- LIVE STREAMING SECTION ------------- */
+.live-streaming__section__container {
+  width: calc(100% - 33rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+.streaming__item {
+  border: 1px solid #e8e8e8;
+  border-radius: 1rem;
+}
+.streaming__img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+.description__box {
+  padding: 2rem;
+}
+.btn--simple {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid #161616;
+  padding: 0.4rem 1.6rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: #161616;
+  transition: all 0.3s;
+}
+.btn--simple:hover {
+  background-color: #dd0000;
+  color: #fff;
+}
+.heading__secondary {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7rem;
+}
+.stream__info {
+  display: flex;
+  margin-top: 2rem;
+}
+.streaming__duration {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgba(22, 22, 22, 0.7);
+  margin-right: 3rem;
+}
+.streaming__comments {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgba(22, 22, 22, 0.7);
+}
+.streaming__duration span,
+.streaming__comments span {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+/* ------------- FOOTER SECTION ------------- */
+.footer__section {
+  background-color: #161616;
+}
+.footer__container {
+}
+.footer__header {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 6rem;
+  text-align: center;
+  padding-top: 13rem;
+}
+.horizontal__line {
+  margin: 5rem 14rem;
+}
+.footer__nav {
+  display: flex;
+  justify-content: center;
+}
+.footer__nav__link {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 500;
+  color: #b9b9b9;
+  text-decoration: none;
+}
+.footer__nav :not(:last-child) {
+  margin-right: 3rem;
+}
+.social__icons {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0 13rem;
+}
+.social__icon {
+  width: 50%;
+  filter: brightness(0.8) saturate(0);
+  transition: all 0.3s;
+}
+.social__icon:hover {
+  filter: brightness(1) saturate(1);
+}
+
+/* ------------- SECONDARY PAGE ------------- */
+/* ------------- STREAMING SCHEDULE SECTION ------------- */
+.nav-and-streaming__schedule__section {
+  width: 85vw;
+  margin: 0 auto 13rem;
+  display: flex;
+}
+.nav__section__container {
+  width: 33rem;
+  margin-right: 2.4rem;
+}
+
+.streaming__schedule__section {
+  width: calc(100% - 33rem);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+.streaming__schedule {
+  display: flex;
+  flex-direction: column;
+  padding: 5.3rem 3rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 1rem;
+}
+.flag__box {
+  display: flex;
+  align-items: center;
+}
+.flag__box span {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 2.2rem;
+  text-transform: uppercase;
+}
+.flag__img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.schedule__info {
+}
+.country__name {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #161616;
+}
+.streaming__data__time {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+  color: #4d4d4d;
+}
